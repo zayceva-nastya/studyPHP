@@ -1,6 +1,5 @@
 <?php
 return [
-    '~^hello/(.*)$~' => [\Controller\MainController::class, 'sayHello'],
+    '~^articles/(\d+)$~' => [\Controller\ArticleController::class, 'view'],
     '~^$~' => [\Controller\MainController::class, 'main'],
-    '~^bye/(.*)$~' => [\Controller\MainController::class, 'sayBye'],
 ];
